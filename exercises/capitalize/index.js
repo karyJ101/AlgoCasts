@@ -18,7 +18,7 @@ function capitalize(str) {
         } else {
             capitalizedString += str.charAt(i)
         } 
-        
+
     }
     return capitalizedString;
 }
