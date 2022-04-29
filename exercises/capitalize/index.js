@@ -11,12 +11,12 @@ const isAlphabet = (character) => (/[a-zA-Z]/).test(character);
 
 function capitalize(str) {
     let capitalizedString = '';
-    if (isAlphabet(str.charAt(0))) capitalizedString += str.charAt(0).toUpperCase();
+    if (isAlphabet(str[0])) capitalizedString += str[0].toUpperCase();
     for (let i = 1; i < str.length; i++) {
-        if (isAlphabet(str.charAt(i)) && !isAlphabet(str.charAt(i - 1))) {
-            capitalizedString += str.charAt(i).toUpperCase();
+        if (isAlphabet(str[i]) && !isAlphabet(str[i - 1])) {
+            capitalizedString += str[i].toUpperCase();
         } else {
-            capitalizedString += str.charAt(i)
+            capitalizedString += str[i];
         } 
 
     }
